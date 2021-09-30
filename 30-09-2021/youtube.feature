@@ -5,18 +5,13 @@ Funcionalidade: Barra de Pesquisa
     Contexto: Estar na pagina HOME
      Dado que esteja na página HOME do YouTube.com
 
-    Esquema do Cenário: Buscar por "<conteudo>" na barra de pesquisa
-          Quando pesquisar por "<conteudo>"
-          Então deverá exiber conteudo sobre "<conteudo>"
+    Cenario: Buscar por "Compasso UOL" na página
+      Dado que esteja na pág HOME pesquiese por "Compasso UOL"
+      Quando filtar por canal
+      Entao deverá acessar o canal da "Compasso UOL"
+      E acessar a aba sobre do canal
+      Entao verificar a quantidade de visualizações que esteja maior de 30k
 
-            Exemplo:
-            |  Compasso UOL  |
-            | Então entar em Canal de "<conteudo>" |
-            | Entao deve acessar "<sobre>" |
-            | Em sobre se numero de visualizações é maior de 30K|
-
-            | The Chalkeaters |
-            | Então entar em Canal de "<conteudo>" |
-            | Entao deve acessar "<vídeos>" |
-            | E deve prcurar Valve Song: COUNT TO THREE e acessa-lo |
-            | Então confirmar se numero de visualizações é maior de 10K |
+    Cenario: Buscar por "The Chalkeaters" na página
+    Dado pesquiese por "The Chalkeaters - Valve Song: COUNT TO THREE" e acesse o primeiro link
+    Entao confirmar se numero de visualizações é maior que 10K
